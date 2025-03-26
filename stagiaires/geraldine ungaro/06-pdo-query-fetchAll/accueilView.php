@@ -5,19 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Toutes les rubriques</title>
+    <title>20 derniers articles</title>
 </head>
 <body>
-<?php
-include "inc/menu.inc.view.php";
-?>
-<h1>Toutes les rubriques</h1>
-<?php
-foreach($rubriques as $rubrique):
-?>
-<h2><?=$rubrique['thesectiontitle']?></h2>
-<?php
-endforeach;
-?>
+<h1>20 derniers articles</h1>
+<p>Affichez ici les 20 derniers articles (si possible avec le nom de l'auteur) en utilisant un foreach</p>
 </body>
 </html>

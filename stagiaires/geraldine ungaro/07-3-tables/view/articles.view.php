@@ -1,3 +1,5 @@
+<?php
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,25 +7,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href=".//css/style.css">
     <title>Nos 30 derniers articles</title>
 </head>
 <body>
 <?php
 include "inc/menu.inc.view.php";
 ?>
-<h1>Nos <?=$nbArticles?> derniers articles</h1>
-<p>Par date desc</p>
+<h1>Nos <?$queryArticle?></h1>
 
 <?php
 foreach($articles as $article):
 ?>
-    <h3><?=$article['thearticletitle']?><small> | Ecrit le<?=$article['thearticledate']?>  par <?=$article['theusername']?></small></h3>
-    <p><?=$article['thearticletext']?></p>
-
+<p>Par date desc</p>
+<?= $article['thearticletitle'] ?></li>
 <?php
 endforeach;
-
-var_dump($articles);
 ?>
+
 </body>
 </html>
