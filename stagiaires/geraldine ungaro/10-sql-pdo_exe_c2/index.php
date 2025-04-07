@@ -21,17 +21,7 @@ try{
 }
 
 // création d'un routeur
-
-// s'il existe la variable get p et qu'elle se trouve dans
-// le tableau des pages acceptées (voir PAGE_MENU dans config)
-// in_array vérifie si une valeur se trouve dans un tableau
-if(isset($_GET['p'])&& in_array($_GET['p'],PAGE_MENU)){
-    // on inclut l'url créée du fichier se trouvant dans pages
-    include "pages/".$_GET['p'].".php";
-}else {
-    // appel de l'accueil
-    include "pages/homepage.php";
-}
+include "pages/homepage.php";
 
 // fermeture de la connexion
 $db = null;
